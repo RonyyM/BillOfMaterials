@@ -1,7 +1,7 @@
 ﻿
 namespace BillOfMaterials
 {
-    partial class MaterialsRedaction
+    partial class MaterialNomenclatureRedaction
     {
         /// <summary>
         /// Required designer variable.

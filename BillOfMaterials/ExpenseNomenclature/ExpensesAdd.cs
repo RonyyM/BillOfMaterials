@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BillOfMaterials
 {
-    public partial class Form1 : Form
+    public partial class ExpensesAdd : Form
     {
-        public Form1()
+        public ExpensesAdd()
         {
             InitializeComponent();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace BillOfMaterials
 {
-    partial class NewExpense
+    partial class ExpensesAdd
     {
         /// <summary>
         /// Required designer variable.

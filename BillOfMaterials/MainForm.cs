@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace BillOfMaterials
 {
-    public partial class Form2 : Form
+    public partial class MainForm : Form
     {
-        public Form2()
+        public MainForm()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -10,29 +10,29 @@ using System.Windows.Forms;
 
 namespace BillOfMaterials
 {
-    public partial class MaterialsRedaction : Form
+    public partial class MaterialNomenclature : Form
     {
-        public MaterialsRedaction()
+        public MaterialNomenclature()
         {
             InitializeComponent();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
 
         }

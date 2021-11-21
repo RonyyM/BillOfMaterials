@@ -1,7 +1,7 @@
 ﻿
 namespace BillOfMaterials
 {
-    partial class Form2
+    partial class MaterialNomenclature
     {
         /// <summary>
         /// Required designer variable.
@@ -36,13 +36,14 @@ namespace BillOfMaterials
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -56,7 +57,7 @@ namespace BillOfMaterials
             this.добавянеНаНовМатериалToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1016, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(926, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -83,18 +84,18 @@ namespace BillOfMaterials
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(238, 63);
+            this.button1.Location = new System.Drawing.Point(219, 63);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 25);
+            this.button1.Size = new System.Drawing.Size(144, 25);
             this.button1.TabIndex = 2;
             this.button1.Text = "Търси";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(238, 94);
+            this.button2.Location = new System.Drawing.Point(219, 94);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(125, 25);
+            this.button2.Size = new System.Drawing.Size(144, 25);
             this.button2.TabIndex = 3;
             this.button2.Text = "Покажи всички";
             this.button2.UseVisualStyleBackColor = true;
@@ -111,7 +112,15 @@ namespace BillOfMaterials
             this.groupBox1.Size = new System.Drawing.Size(468, 147);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Търсене";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(219, 37);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(144, 20);
+            this.textBox1.TabIndex = 5;
             // 
             // comboBox1
             // 
@@ -125,20 +134,14 @@ namespace BillOfMaterials
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 4;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(219, 37);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 20);
-            this.textBox1.TabIndex = 5;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(42, 89);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(407, 234);
+            this.dataGridView1.Size = new System.Drawing.Size(297, 234);
             this.dataGridView1.TabIndex = 5;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button3
             // 
@@ -175,21 +178,32 @@ namespace BillOfMaterials
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Location = new System.Drawing.Point(534, 85);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(468, 348);
+            this.groupBox2.Size = new System.Drawing.Size(376, 348);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // Form2
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(27, 251);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(126, 50);
+            this.button6.TabIndex = 10;
+            this.button6.Text = "Добавяне на материал";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // MaterialNomenclature
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 446);
+            this.ClientSize = new System.Drawing.Size(926, 446);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox2);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form2";
+            this.Name = "MaterialNomenclature";
             this.Text = "Материали";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -218,5 +232,6 @@ namespace BillOfMaterials
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button6;
     }
 }

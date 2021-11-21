@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace BillOfMaterials
 {
-    public partial class NewExpense : Form
+    public partial class LoginForm : Form
     {
-        public NewExpense()
+        public LoginForm()
         {
             InitializeComponent();
         }
 
-        private void Form4_Load(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
